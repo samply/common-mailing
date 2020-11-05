@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>de.samply</groupId>
+        <artifactId>parent</artifactId>
+        <version>11.1.0</version>
+    </parent>
+
+    <artifactId>common-mailing</artifactId>
+    <version>3.0.0</version>
+
+    <name>Samply Common Mailing</name>
+    <description>This library offers utilities for building and sending HTML emails</description>
+    <url>https://github.com/samply/common-mailing</url>
+    <organization>
+        <name>Samply Community</name>
+    </organization>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Deniz Tas</name>
+            <email>d.tas@dkfz-heidelberg.de</email>
+            <organization>German Cancer Research Center</organization>
+            <organizationUrl>https://www.dkfz.de/en/</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/samply/common-mailing.git</connection>
+        <developerConnection>scm:git:https://github.com/samply/common-mailing.git</developerConnection>
+        <url>https://github.com/samply/common-mailing</url>
+    </scm>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <version.samply.common.config>5.1.0</version.samply.common.config>
+        <soy.version>2015-04-10</soy.version>
+        <skipTests>false</skipTests>
+        <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
+        <maven-javadoc-plugin.version>2.9.1</maven-javadoc-plugin.version>
+        <maven-gpg-plugin.version>1.5</maven-gpg-plugin.version>
+        <nexus-staging-maven-plugin.version>1.6.7</nexus-staging-maven-plugin.version>
+        <mail.version>1.4.7</mail.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>de.samply</groupId>
+            <artifactId>common-config</artifactId>
+            <version>${version.samply.common.config}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>${mail.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.template</groupId>
+            <artifactId>soy</artifactId>
+            <version>${soy.version}</version>
+        </dependency>
+    </dependencies>
+
+
+</project>

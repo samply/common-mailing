@@ -1,0 +1,17 @@
+{delpackage Footer}
+{namespace samply.mailing}
+
+/**
+ * The footer of the mail
+ * @param? locale The locale of the mail
+ */
+{deltemplate footer}
+    {switch $locale}
+        {case 'de', 'de_DE'}
+            <p>Mit freundlichen Grüßen</p>
+            <p>Ihr Samply Team</p>
+        {default}
+            <p>Yours sincerely</p>
+            <p>The Samply Team</p>
+    {/switch}
+{/deltemplate}
