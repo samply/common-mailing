@@ -1,3 +1,4 @@
+UNMERGED BRANCH -CHANGES FROM OTHER SAMPLY TEAMS MISSING
 # Samply Common Mailing
 
 This library offers utilities for building and sending HTML emails.
