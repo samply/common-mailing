@@ -50,7 +50,7 @@
     </distributionManagement>
 
     <properties>
-        <version.samply.common.config>5.1.0</version.samply.common.config>
+        <version.samply.common.config>5.2.0</version.samply.common.config>
         <soy.version>2015-04-10</soy.version>
         <skipTests>false</skipTests>
         <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
